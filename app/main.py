@@ -12,3 +12,7 @@ app = FastAPI(title="FastAPI + SQLAlchemy REST APIs")
 # Routes Registeration : 
 app.include_router(user_router)
 
+# Root Route
+@app.get("/")
+def root():
+    return {"message": "FastAPI is running 🚀"}
