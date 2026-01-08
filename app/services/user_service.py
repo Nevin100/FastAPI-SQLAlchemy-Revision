@@ -34,7 +34,9 @@ def create_user(db: Session, user: UserCreate):
 
 # Get All Users : 
 def get_all_users(db : Session):
-    return db.query(User).all()
+   user = db.query(User).all()
+
+   return user
 
 # Get Single User :
 def get_single_user(db: Session, user_id : int):
