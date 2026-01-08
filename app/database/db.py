@@ -7,7 +7,7 @@ DATBASE_URL = "sqlite:///./test.db"
 
 # create_engine() : It forms the connection with Database
 engine = create_engine(
-    DATABASE_URL,
+    DATBASE_URL,
     connect_args={"check_same_thread": False} # SQLITE spcific
 )
 
